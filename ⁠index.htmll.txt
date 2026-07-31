@@ -316,8 +316,15 @@
             font-size: 0.95rem;
             margin-bottom: 6px;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
+            gap: 4px;
+        }
+
+        .footer-signature span {
+            display: inline-flex;
+            align-items: center;
             gap: 6px;
         }
 
@@ -412,12 +419,13 @@
             <div id="fullClinicsList"></div>
         </div>
 
-        <!-- الفوتر البسيط مع إدراج الاسم بالأسفل بأسلوب راقٍ -->
+        <!-- الفوتر البسيط مع إدراج الإشراف والإعداد بالأسفل بأسلوب راقٍ -->
         <div class="footer">
-            <p class="footer-signature">
-                <i class="fa-solid fa-user-doctor" style="color: var(--primary-accent);"></i> إعداد وإشراف: الصيدلاني عزالدين الخرابشه
-            </p>
-            <p>قسم الصيدلة - مستشفى الحسين السلط الجديد © 2026</p>
+            <div class="footer-signature">
+                <span><i class="fa-solid fa-user-doctor" style="color: var(--primary-accent);"></i> بإشراف رئيس قسم الصيدلة د. اروى العدوان</span>
+                <span><i class="fa-solid fa-laptop-code" style="color: var(--primary-accent);"></i> اعداد وتصميم : د. عزالدين الخرابشه</span>
+            </div>
+            <p style="margin-top: 8px;">قسم الصيدلة - مستشفى الحسين السلط الجديد © 2026</p>
         </div>
     </div>
 
